@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="js fontawesome-i2svg-active fontawesome-i2svg-complete">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSE VR Campus Tour – Arizona State University</title>  <link rel="icon" href="https://www.asu.edu/themes/custom/asu_edu/favicon.ico" type="image/x-icon">  <link rel="stylesheet" href="css/style.css?v=1.3">
+</head>
+<body>
+
+  <!-- ===================== PANORAMA VIEWER ===================== -->
+  <div id="pano"></div>
+
+  <!-- ===================== EDGE INDICATORS ===================== -->
+  <div id="edge-indicators"></div>
+
+  <!-- ===================== SCENE NAME OVERLAY ===================== -->
+  <div id="scene-info">
+    <span id="scene-name"></span>
+    <span id="scene-description"></span>
+  </div>
+
+  <!-- ===================== TOP HEADER ===================== -->
+  <header id="top-bar">
+    <div id="logo-area">
+      <img id="asu-logo" src="images/asu-endorsed.png" alt="Arizona State University Logo">
+      <span id="logo-subtitle">Fulton Schools of Engineering · VR Campus Tour</span>
+    </div>
+    <div id="top-controls">
+      <button id="cookie-settings-btn" class="ctrl-btn" title="Cookie & Privacy Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 2a9.96 9.96 0 0 0-2 .22V4s0 1-1 1-1-1-1-1H7s0 2-2 2-2-2-2-2"></path>
+          <circle cx="8" cy="12" r="1" fill="currentColor"></circle>
+          <circle cx="14" cy="10" r="1" fill="currentColor"></circle>
+          <circle cx="11" cy="16" r="1" fill="currentColor"></circle>
+          <circle cx="16" cy="15" r="1" fill="currentColor"></circle>
+        </svg>
+      </button>
+      <button id="autorotate-toggle" class="ctrl-btn" title="Toggle autorotate">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+          <path d="M21 3v5h-5"/>
+        </svg>
+      </button>
+      <button id="fullscreen-toggle" class="ctrl-btn" title="Toggle fullscreen">
+        <svg id="fs-enter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
+          <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
+        </svg>
+        <svg id="fs-exit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+          <polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/>
+          <line x1="10" y1="14" x2="3" y2="21"/><line x1="21" y1="3" x2="14" y2="10"/>
+        </svg>
+      </button>
+      <button id="sidebar-toggle" class="ctrl-btn" title="Toggle locations panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <h2>Campus Locations</h2>
+    </div>
+    <ul id="scene-list">
+      <!-- Populated dynamically by app.js -->
+    </ul>
+    <div id="sidebar-footer">
+      <p>Click a location or use hotspots <span class="hotspot-icon-inline">&#x27A1;</span> to navigate between scenes.</p>
+    </div>
+  </nav>
+
+  <!-- ===================== LOADING OVERLAY ===================== -->
+  <div id="loading-overlay">
+    <div id="loading-content">
+      <div id="loading-spinner"></div>
+      <p>Loading panorama…</p>
+    </div>
+  </div>
+
+  <!-- ===================== NO-IMAGE NOTICE ===================== -->
+  <div id="no-image-notice" style="display:none">
+    <div id="no-image-content">
+      <h3>Panoramic image not found</h3>
+      <p>Please add a 360° equirectangular photo at the path shown below, then reload the page.</p>
+      <code id="missing-image-path"></code>
+      <p class="hint">See <strong>images/scenes/README.md</strong> for instructions.</p>
+    </div>
+  </div>
+
+  <!-- ===================== TUTORIAL OVERLAY ===================== -->
+  <div id="tutorial-overlay" style="display:none;">
+    <div id="tutorial-content">
+      <h2>Welcome to the VR Tour!</h2>
+      <p>Here is a quick guide on how to navigate the 360&deg; environment:</p>
+      
+      <div class="tutorial-section">
+        <h3>Top Right Controls</h3>
+        <ul>
+          <li>
+            <span class="icon-container">
+              <svg class="tutorial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+                <path d="M21 3v5h-5"/>
+              </svg>
+            </span>
+            <span><strong>Auto-Rotate:</strong> Slowly spins the camera automatically.</span>
+          </li>
+          <li>
+            <span class="icon-container">
+              <svg class="tutorial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
+                <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
+              </svg>
+            </span>
+            <span><strong>Fullscreen:</strong> Expands the tour to fill your entire screen.</span>
+          </li>
+          <li>
+            <span class="icon-container">
+              <svg class="tutorial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/>
+                <line x1="3" y1="18" x2="21" y2="18"/>
+              </svg>
+            </span>
+            <span><strong>Locations Panel:</strong> Opens a sidebar to travel to different rooms and their sections.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tutorial-section">
+        <h3>Hotspots</h3>
+        <ul>
+          <li class="tutorial-hotspot-item">
+            <div class="link-hotspot mock-hotspot">
+              <svg viewBox="0 0 24 24"><path d="M12 2L8 10h3v10h2V10h3z"></path></svg>
+            </div>
+            <span><strong>Link Hotspots:</strong> Click these to move to a new area.</span>
+          </li>
+          <li class="tutorial-hotspot-item">
+            <div class="info-hotspot mock-hotspot">i</div>
+            <span><strong>Info Hotspots:</strong> Hover over these to learn more about the equipment or space.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tutorial-section">
+        <h3>Navigating the View</h3>
+        <p>Click and drag your mouse (or swipe on touch screens) to look around.</p>
+      </div>
+
+      <button id="tutorial-start-btn">Get Started</button>
+    </div>
+  </div>
+
+    <!-- ===================== FEEDBACK WIDGET ===================== -->
+  <button id="feedback-toggle-btn" title="Leave Feedback">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+    Feedback
+  </button>
+
+  <div id="feedback-modal" class="hidden">
+    <div id="feedback-content">
+      <h3>Scene Feedback</h3>
+      <p>Is this view helpful?</p>
+      
+      <div class="feedback-helpful-btns">
+        <button id="btn-helpful-yes" class="fb-btn">👍 Yes</button>
+        <button id="btn-helpful-no" class="fb-btn">👎 No</button>
+      </div>
+
+      <div id="feedback-extra" class="hidden">
+        <label>Rate this view (Optional)</label>
+        <div class="star-rating" id="star-rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <label for="feedback-comment">Any specific thoughts? (Optional)</label>
+        <textarea id="feedback-comment" rows="3" placeholder="Tell us what you think..."></textarea>
+        <button id="submit-feedback-btn">Submit</button>
+      </div>
+      
+      <div id="feedback-success" class="hidden">
+        <p>✅ Thanks for your feedback!</p>
+      </div>
+
+      <button id="close-feedback-btn">×</button>
+    </div>
+  </div>
+
+  <!-- ===================== DATA CONSENT OVERLAY ===================== -->
+  <div id="cookie-consent-banner" class="hidden">
+    <div class="cookie-consent-content">
+      <h3>Data & Privacy Settings</h3>
+      <p>We use cookies and collect anonymous usage data to improve your experience on our VR Tour. You can change this setting at any time using the cookie icon in the top right.</p>
+      
+      <div class="cookie-consent-options">
+        <label class="consent-option">
+          <input type="checkbox" id="consent-analytics" checked>
+          <span>Anonymous Usage Analytics</span>
+        </label>
+        <label class="consent-option">
+          <input type="checkbox" id="consent-location" checked>
+          <span>Location Data (Optional)</span>
+        </label>
+      </div>
+
+      <div class="cookie-consent-buttons">
+        <button id="cookie-consent-accept">Save Preferences</button>
+        <button id="cookie-consent-accept-all">Accept All</button>
+        <button id="cookie-consent-decline">Decline All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <!-- Marzipano 360° viewer library -->
+  <script src="https://cdn.jsdelivr.net/npm/marzipano@0.10.2/dist/marzipano.js"
+          integrity="sha384-DzG9/1qU4N16xJ12gRMAdNFu2z2wNiXF+7vTnM/ZQcRO1HcNXRlVWw/j4QVIx/9E"
+          crossorigin="anonymous"></script>
+  <!-- screenfull for cross-browser fullscreen API -->
+  <script src="https://cdn.jsdelivr.net/npm/screenfull@5.2.0/dist/screenfull.js"
+          integrity="sha384-Qfbv8upMDu/ikv42M0Jnym2hahbDQ77Nm8PGU0G+iA6UIwt1+scE6P1qKXA0anWU"
+          crossorigin="anonymous"></script>
+  <!-- Tour scene data -->
+  <script src="js/data.js"></script>
+  <!-- Main application -->
+  <script src="js/app.js"></script>
+
+  <!-- Load Supabase integration -->
+  <script type="module" src="js/supabase.js"></script>
+
+</body>
+</html>

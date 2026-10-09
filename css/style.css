@@ -1,0 +1,1002 @@
+/* =============================================================
+   FSE VR Campus Tour – Stylesheet
+   ASU brand colours: Maroon #8C1D40 · Gold #FFC627
+   ============================================================= */
+
+/* ---------- Reset / Base ------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", FreeSans, sans-serif;
+  background: #1a1a1a;
+  color: #f0f0f0;
+}
+
+/* ---------- Panorama viewer --------------------------------- */
+#pano {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: #111;
+}
+
+/* ---------- Top bar ----------------------------------------- */
+#top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: linear-gradient(135deg, #8C1D40 0%, #6b1530 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}
+
+#logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+}
+
+#asu-logo {
+  max-height: 48px;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+#logo-subtitle {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 0.4px;
+}
+
+#top-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.ctrl-btn {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  padding: 6px;
+}
+
+.ctrl-btn:hover { background: rgba(255,198,39,0.3); }
+.ctrl-btn.active { background: rgba(255,198,39,0.5); }
+
+.ctrl-btn svg { width: 20px; height: 20px; }
+
+/* ---------- Sidebar ----------------------------------------- */
+#sidebar {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  width: 280px;
+  bottom: 0;
+  background: rgba(20, 20, 20, 0.92);
+  backdrop-filter: blur(8px);
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  border-left: 1px solid rgba(255,255,255,0.08);
+}
+
+#sidebar.hidden { transform: translateX(100%); }
+
+#sidebar-header {
+  padding: 20px 20px 12px;
+  border-bottom: 1px solid rgba(255,198,39,0.3);
+}
+
+#sidebar-header h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFC627;
+}
+
+#scene-list {
+  list-style: none;
+  overflow-y: auto;
+  flex: 1;
+  padding: 8px 0;
+}
+
+/* Scene Groups */
+.scene-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.scene-group-header:hover {
+  background: rgba(140,29,64,0.3);
+}
+
+.scene-group-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #FFC627;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.scene-group-toggle {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  transition: transform 0.3s ease;
+}
+
+.scene-group-header.collapsed .scene-group-toggle {
+  transform: rotate(-90deg);
+}
+
+.scene-group-items {
+  list-style: none;
+  overflow: hidden;
+  max-height: 2000px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.scene-group-items.collapsed {
+  max-height: 0;
+}
+
+.scene-group-items li {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.scene-group-items li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px 14px 30px; /* indent sub-items slightly */
+  text-decoration: none;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.scene-group-items li a:hover {
+  background: rgba(255,198,39,0.1);
+  color: #FFC627;
+}
+
+.scene-group-items li.active a {
+  background: rgba(140,29,64,0.5);
+  color: #FFC627;
+  border-left: 3px solid #FFC627;
+  padding-left: 27px; /* adjust for border width */
+}
+
+.scene-thumb {
+  width: 46px;
+  height: 32px;
+  border-radius: 4px;
+  object-fit: cover;
+  background: #333;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.scene-thumb-placeholder {
+  width: 46px;
+  height: 32px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #8C1D40, #444);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.scene-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.scene-title {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scene-subtitle {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#sidebar-footer {
+  padding: 14px 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.5;
+}
+
+.hotspot-icon-inline {
+  color: #FFC627;
+}
+
+/* ---------- Scene info overlay (bottom-left) ---------------- */
+#scene-info {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  pointer-events: none;
+  max-width: 360px;
+}
+
+#scene-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.8);
+  background: rgba(140,29,64,0.75);
+  padding: 4px 12px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#scene-description {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.55);
+  padding: 3px 12px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* ---------- Loading overlay --------------------------------- */
+#loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,10,0.85);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s;
+}
+
+#loading-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#loading-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(255,198,39,0.2);
+  border-top-color: #FFC627;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#loading-content p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+}
+/* ---------- Tutorial overlay --------------------------------- */
+#tutorial-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.85);
+  z-index: 300;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  padding: 20px;
+}
+
+#tutorial-content {
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid #FFC627;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 750px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+#tutorial-content h2 {
+  color: #FFC627;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#tutorial-content > p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+
+.tutorial-section {
+  margin-bottom: 20px;
+}
+
+.tutorial-section h3 {
+  color: #FFC627;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.tutorial-section ul {
+  padding-left: 20px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.tutorial-section li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping so icon stays nice */
+  gap: 12px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  flex-shrink: 0;
+}
+
+.tutorial-icon {
+  width: 24px;
+  height: 24px;
+  color: #FFC627;
+}
+
+.tutorial-hotspot-item {
+  display: flex;
+  align-items: center;
+  gap: 12px !important;
+}
+
+.mock-hotspot {
+  position: relative !important;
+  display: flex !important;
+  animation: none !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5) !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 0.9rem !important; /* Resetting size specifically for tutorial */
+  flex-shrink: 0; /* Prevents the circular icon from getting smushed horizontally on smaller screens */
+}
+
+.mock-hotspot svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#tutorial-start-btn {
+  display: block;
+  width: 100%;
+  background: #8C1D40;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 30px;
+}
+
+#tutorial-start-btn:hover {
+  background: #a3224b;
+}
+/* ---------- No-image notice --------------------------------- */
+#no-image-notice {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,10,0.9);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#no-image-content {
+  background: #1e1e1e;
+  border: 1px solid rgba(140,29,64,0.5);
+  border-radius: 10px;
+  padding: 32px;
+  max-width: 480px;
+  text-align: center;
+}
+
+#no-image-content h3 {
+  font-size: 1.2rem;
+  color: #FFC627;
+  margin-bottom: 12px;
+}
+
+#no-image-content p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+#no-image-content code {
+  display: block;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #FFC627;
+  margin-bottom: 12px;
+  word-break: break-all;
+}
+
+.hint { font-size: 0.8rem !important; color: rgba(255,255,255,0.45) !important; }
+
+/* ---------- Link hotspots (navigation arrows) --------------- */
+.link-hotspot-wrapper {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.link-hotspot-wrapper:hover .link-hotspot {
+  transform: scale(1.2);
+  background: rgba(255,198,39,0.9);
+}
+
+.link-hotspot {
+  width: 44px;
+  height: 44px;
+  background: rgba(140,29,64,0.85);
+  border: 2px solid #FFC627;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+  transition: transform 0.2s, background 0.2s;
+  animation: pulse-link 2.5s infinite;
+}
+
+@keyframes pulse-link {
+  0% {
+    box-shadow: 0 0 0 0 rgba(140, 29, 64, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(140, 29, 64, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(140, 29, 64, 0);
+  }
+}
+
+.link-hotspot-wrapper:hover .link-hotspot {
+  transform: scale(1.1);
+  background: #FFC627;
+  animation: none;
+}
+
+.link-hotspot svg {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+}
+
+.link-hotspot-wrapper:hover .link-hotspot svg {
+  fill: #8C1D40;
+}
+
+/* Tooltip that appears on hover */
+.link-hotspot-tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20,20,20,0.9);
+  border: 1px solid rgba(255,198,39,0.4);
+  color: #FFC627;
+  font-size: 0.72rem;
+  white-space: nowrap;
+  padding: 4px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.link-hotspot-wrapper:hover .link-hotspot-tooltip { opacity: 1; }
+
+/* ---------- Info hotspots ----------------------------------- */
+.info-hotspot-wrapper {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.info-hotspot {
+  width: 44px;
+  height: 44px;
+  background: rgba(255,198,39,0.9);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #8C1D40;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+  user-select: none;
+  animation: pulse-hotspot 2s infinite;
+}
+
+@keyframes pulse-hotspot {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 198, 39, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 198, 39, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 198, 39, 0);
+  }
+}
+
+.info-hotspot-wrapper:hover .info-hotspot {
+  background: #fff;
+  transform: scale(1.1);
+  animation: none;
+}
+
+.info-hotspot-panel {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20,20,20,0.95);
+  border: 1px solid rgba(255,198,39,0.4);
+  border-radius: 8px;
+  padding: 16px 20px;
+  min-width: 250px;
+  max-width: 400px;
+  /* Don't disable pointer events here! Let hover work naturally. */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  cursor: text;
+  pointer-events: auto; /* Required to allow text selection */
+}
+
+/* Creating an invisible bridge so the mouse doesn't fall off hover */
+.info-hotspot-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  z-index: 5;
+}
+
+.info-hotspot-title {
+  position: relative;
+  z-index: 15;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #FFC627;
+  margin-bottom: 6px;
+  border-bottom: 1px solid rgba(255,198,39,0.2);
+  padding-bottom: 4px;
+  user-select: text; /* Allow users to copy and paste text */
+}
+
+.info-hotspot-text {
+  position: relative;
+  z-index: 15;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.5;
+  user-select: text; /* Allow users to copy and paste text */
+}
+
+.info-hotspot-text a, 
+.info-hotspot-text .highlight { /* Add highlight class support */
+  color: #FFC627;
+  text-decoration: underline;
+  pointer-events: auto;
+}
+
+.info-hotspot-text a:hover {
+  color: #fff;
+}
+
+/* Allow hovering over the panel without it closing */
+.info-hotspot-wrapper:hover .info-hotspot-panel,
+.info-hotspot-panel:hover { 
+  visibility: visible;
+  opacity: 1; 
+}
+
+/* ---------- Responsive -------------------------------------- */
+@media (max-width: 600px) {
+  #logo-subtitle { display: none; }
+  #sidebar { width: 240px; }
+
+  #scene-info {
+    bottom: 12px;
+    left: 12px;
+    max-width: calc(100vw - 24px);
+  }
+
+  #scene-name { font-size: 0.95rem; }
+  #scene-description { font-size: 0.72rem; }
+
+  /* Adjust tutorial for mobile screens */
+  #tutorial-overlay {
+    padding: 10px;
+    align-items: flex-start; /* Prevents top cutoff if screen is extremely short */
+  }
+  #tutorial-content {
+    padding: 15px;
+    max-height: 95vh; /* Take up more available height */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+    margin: auto 0; /* Keeps it centered vertically when there is extra space but top-aligned when not */
+  }
+  #tutorial-content h2 {
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+  }
+  #tutorial-content > p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+  .tutorial-section {
+    margin-bottom: 10px;
+  }
+  .tutorial-section h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  .tutorial-section ul {
+    padding-left: 0;
+  }
+  .tutorial-section li {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    gap: 8px; /* Decrease gap between icon and text */
+  }
+  .tutorial-icon {
+    width: 20px; /* Slightly smaller icons for mobile */
+    height: 20px;
+  }
+  .icon-container {
+    width: 24px;
+  }
+  #tutorial-start-btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- Edge Indicators ------------------------ */
+#edge-indicators {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.edge-indicator {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: rgba(140, 29, 64, 0.8);
+  border: 2px solid #FFC627;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+  transform-origin: center;
+  transition: opacity 0.2s, background 0.2s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  margin-left: -16px;
+  margin-top: -16px;
+  z-index: 10;
+}
+
+.edge-indicator svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+.edge-indicator:hover {
+  background: rgba(255, 198, 39, 1);
+  border-color: #fff;
+}
+.edge-indicator:hover svg {
+  fill: #8C1D40;
+}
+
+/* --- Feedback Widget --- */
+#feedback-toggle-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  z-index: 100;
+  transition: background 0.2s;
+}
+#feedback-toggle-btn:hover { background: rgba(140, 29, 64, 0.9); /* ASU Maroon */ }
+
+#feedback-modal {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  background: rgba(25, 25, 25, 0.95);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 101;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  font-family: sans-serif;
+}
+#feedback-modal.hidden { display: none; }
+
+#feedback-content h3 { margin: 0 0 10px 0; font-size: 16px; }
+#feedback-content p { margin: 0 0 10px 0; font-size: 14px; color: #ccc; }
+
+.feedback-helpful-btns { display: flex; gap: 10px; margin-bottom: 15px; }
+.fb-btn {
+  flex: 1; padding: 8px; cursor: pointer; border-radius: 4px; border: none;
+  background: #444; color: white; font-weight: bold; transition: 0.2s;
+}
+.fb-btn:hover, .fb-btn.selected { background: #ffc627; color: #191919; /* ASU Gold */ }
+
+#feedback-extra label { display: block; font-size: 12px; margin-bottom: 5px; color: #ccc; }
+#feedback-comment { width: 100%; box-sizing: border-box; padding: 8px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #555; background: #333; color: white; resize: none; }
+#submit-feedback-btn { width: 100%; padding: 10px; background: #8c1d40; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; }
+#submit-feedback-btn:hover { background: #a8224d; }
+
+#close-feedback-btn {
+  position: absolute; top: 10px; right: 10px; background: none; border: none;
+  color: #888; font-size: 20px; cursor: pointer; line-height: 1;
+}
+#close-feedback-btn:hover { color: white; }
+#feedback-success { text-align: center; color: #4ade80; font-weight: bold; padding: 10px 0; }
+
+/* --- Star Rating --- */
+.star-rating {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #555; /* Default dim color */
+}
+.star-rating .star {
+  transition: color 0.2s;
+}
+.star-rating .star.hovered,
+.star-rating .star.selected {
+  color: #ffc627; /* ASU Gold */
+}
+
+/* --- Cookie Consent Overlay --- */
+#cookie-consent-banner {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 0.85); /* Dark background like tutorial */
+  z-index: 1000; /* Higher than tutorial-overlay (300) and top-bar (100) */
+  padding: 20px;
+  transition: opacity 0.3s;
+}
+
+#cookie-consent-banner.hidden {
+  display: none !important;
+  opacity: 0;
+}
+
+.cookie-consent-content {
+  background: rgba(20, 20, 20, 0.98);
+  border: 1px solid #8C1D40; /* ASU Maroon Border */
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.cookie-consent-content h3 {
+  color: #ffc627; /* ASU Gold */
+  margin: 0;
+  font-size: 20px;
+}
+
+.cookie-consent-content p {
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.cookie-consent-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin: 5px 0;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.consent-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+.consent-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #8C1D40;
+}
+
+.cookie-consent-buttons {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.cookie-consent-buttons button {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+#cookie-consent-accept {
+  background-color: #555;
+  color: white;
+}
+
+#cookie-consent-accept:hover {
+  background-color: #777;
+}
+
+#cookie-consent-accept-all {
+  background-color: #8C1D40; /* ASU Maroon */
+  color: white;
+}
+
+#cookie-consent-accept-all:hover {
+  background-color: #a8224d;
+}
+
+#cookie-consent-decline {
+  background-color: #444;
+  color: white;
+}
+
+#cookie-consent-decline:hover {
+  background-color: #ffc627;
+  color: #191919;
+}
+
+@media (max-width: 600px) {
+  .cookie-consent-buttons {
+    flex-direction: column;
+  }
+}
