@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 360 Room Tour</title>
+
+  <link rel="stylesheet" href="pannellum.css">
+  <script src="pannellum.js"></script>
+</head>
+
+<body>
+
+  <div id="panorama" style="width: 100%; height: 100vh;"></div>
+
+  <script>
+    pannellum.viewer('panorama', {
+
+      default: {
+        firstScene: 'spot1',
+        autoLoad: true
+      },
+
+      scenes: {
+
+        spot1: {
+          type: 'equirectangular',
+          panorama: 'Room1.JPG',
+
+          hotSpots: [
+            {
+              pitch: 0,
+              yaw: 0,
+              type: 'scene',
+              text: 'Move to the next position',
+              sceneId: 'spot2'
+            }
+          ]
+        },
+
+        spot2: {
+          type: 'equirectangular',
+          panorama: 'Room1.0.JPG',
+
+          hotSpots: [
+            {
+              pitch: 0,
+              yaw: 180,
+              type: 'scene',
+              text: 'Move back',
+              sceneId: 'spot1'
+            }
+          ]
+        }
+
+      }
+
+    });
+  </script>
+
+</body>
+</html>
