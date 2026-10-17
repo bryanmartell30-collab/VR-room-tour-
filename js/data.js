@@ -223,7 +223,23 @@ var APP_DATA = {
   infoHotspots: []
 },
       /* TOOKER ESPACES ROOMS */
+{
+  id: 'tooker-espaces-inside',
+  name: 'Tooker Espaces',
+  subtitle: 'Inside View',
+  description: '360-degree view inside Tooker Espaces.',
+  imagePath: 'images/scenes/tooker espace inside .JPG',
+  emoji: '🏢',
 
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [],
+  infoHotspots: []
+}
    
     ] /* end scenes */
 
