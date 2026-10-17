@@ -221,7 +221,7 @@ var APP_DATA = {
 
   linkHotspots: [],
   infoHotspots: []
-};
+},
       /* TOOKER ESPACES ROOMS */
     {
       id: 'tooker-2',
