@@ -204,7 +204,7 @@ var APP_DATA = {
       infoHotspots: []
     },
 
-      /* TOOKER ESPACE ROOM */
+     
   /* TOOKER ESPACES - INSIDE VIEW */
   {
     id: 'tooker-espaces-inside',
