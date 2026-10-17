@@ -222,23 +222,23 @@ var APP_DATA = {
   linkHotspots: [],
   infoHotspots: []
 };
-   /* Tooker Espace room */
-     {
+      /* TOOKER ESPACES ROOMS */
+    {
       id: 'tooker-2',
-      name: 'Tooker Study Space',
+      name: 'Tooker Espaces',
       subtitle: 'View 1',
-      description: '360-degree view of the Tooker study space.',
+      description: '360-degree view of Tooker Espaces.',
       imagePath: 'images/scenes/tooker 2.0.JPG',
       emoji: '📚',
       initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
       linkHotspots: [],
       infoHotspots: []
     },
-  {
+    {
       id: 'tooker-3',
-      name: 'Tooker Study Space',
+      name: 'Tooker Espaces',
       subtitle: 'View 2',
-      description: '360-degree view of the Tooker study space.',
+      description: '360-degree view of Tooker Espaces.',
       imagePath: 'images/scenes/tooker espace 3.0.JPG',
       emoji: '📚',
       initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
@@ -247,9 +247,9 @@ var APP_DATA = {
     },
     {
       id: 'tooker-4',
-      name: 'Tooker Study Space',
+      name: 'Tooker Espaces',
       subtitle: 'View 3',
-      description: '360-degree view of the Tooker study space.',
+      description: '360-degree view of Tooker Espaces.',
       imagePath: 'images/scenes/tooker espace1.JPG',
       emoji: '📚',
       initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
@@ -258,9 +258,9 @@ var APP_DATA = {
     },
     {
       id: 'tooker-5',
-      name: 'Tooker Study Space',
+      name: 'Tooker Espaces',
       subtitle: 'View 4',
-      description: '360-degree view of the Tooker study space.',
+      description: '360-degree view of Tooker Espaces.',
       imagePath: 'images/scenes/tooker espaces 1.0.JPG',
       emoji: '📚',
       initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
@@ -269,16 +269,16 @@ var APP_DATA = {
     },
     {
       id: 'tooker-6',
-      name: 'Tooker Study Space',
+      name: 'Tooker Espaces',
       subtitle: 'View 5',
-      description: '360-degree view of the Tooker study space.',
+      description: '360-degree view of Tooker Espaces.',
       imagePath: 'images/scenes/tooker espaces.JPG',
       emoji: '📚',
       initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
       linkHotspots: [],
       infoHotspots: []
     }
-
-  ] /* end scenes */
+   
+    ] /* end scenes */
 
 }; /* end APP_DATA */
