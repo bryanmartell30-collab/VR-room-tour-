@@ -204,24 +204,25 @@ var APP_DATA = {
       infoHotspots: []
     },
 
-      /* TOOKER ESPACES ROOMS */
-{
-  id: 'tooker-espaces-inside',
-  name: 'Tooker Espaces',
-  subtitle: 'Inside View',
-  description: '360-degree view inside Tooker Espaces.',
-  imagePath: 'images/scenes/tooker espace inside .JPG',
-  emoji: '🏢',
+      /* TOOKER ESPACE ROOM */
+  /* TOOKER ESPACES - INSIDE VIEW */
+  {
+    id: 'tooker-espaces-inside',
+    name: 'Tooker Espaces',
+    subtitle: 'Inside View',
+    description: 'Explore the inside of Tooker Espaces in 360 degrees.',
+    imagePath: 'images/scenes/tooker espace inside .JPG',
+    emoji: '🏢',
 
-  initialViewParameters: {
-    yaw: 0,
-    pitch: 0,
-    fov: 1.4
-  },
+    initialViewParameters: {
+      yaw: 0,
+      pitch: 0,
+      fov: 1.4
+    },
 
-  linkHotspots: [],
-  infoHotspots: []
-}
+    linkHotspots: [],
+    infoHotspots: []
+  }
    
     ] /* end scenes */
 
