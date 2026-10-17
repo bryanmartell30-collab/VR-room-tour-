@@ -204,24 +204,6 @@ var APP_DATA = {
       infoHotspots: []
     },
 
-   /* NEW ENGINEERING ROOM */
-{
-  id: 'engineering-room-1',
-  name: 'Engineering Room',
-  subtitle: 'Main View',
-  description: 'Explore this engineering space in 360 degrees.',
-  imagePath: 'images/scenes/Room1.JPG',
-  emoji: '🏭',
-
-  initialViewParameters: {
-    yaw: 0,
-    pitch: 0,
-    fov: 1.4
-  },
-
-  linkHotspots: [],
-  infoHotspots: []
-},
       /* TOOKER ESPACES ROOMS */
 {
   id: 'tooker-espaces-inside',
