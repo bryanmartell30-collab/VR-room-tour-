@@ -221,8 +221,64 @@ var APP_DATA = {
 
   linkHotspots: [],
   infoHotspots: []
-}
+};
+   /* Tooker Espace room */
+     {
+      id: 'tooker-2',
+      name: 'Tooker Study Space',
+      subtitle: 'View 1',
+      description: '360-degree view of the Tooker study space.',
+      imagePath: 'images/scenes/tooker 2.0.JPG',
+      emoji: '📚',
+      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+      linkHotspots: [],
+      infoHotspots: []
+    },
+  {
+      id: 'tooker-3',
+      name: 'Tooker Study Space',
+      subtitle: 'View 2',
+      description: '360-degree view of the Tooker study space.',
+      imagePath: 'images/scenes/tooker espace 3.0.JPG',
+      emoji: '📚',
+      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+      linkHotspots: [],
+      infoHotspots: []
+    },
+    {
+      id: 'tooker-4',
+      name: 'Tooker Study Space',
+      subtitle: 'View 3',
+      description: '360-degree view of the Tooker study space.',
+      imagePath: 'images/scenes/tooker espace1.JPG',
+      emoji: '📚',
+      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+      linkHotspots: [],
+      infoHotspots: []
+    },
+    {
+      id: 'tooker-5',
+      name: 'Tooker Study Space',
+      subtitle: 'View 4',
+      description: '360-degree view of the Tooker study space.',
+      imagePath: 'images/scenes/tooker espaces 1.0.JPG',
+      emoji: '📚',
+      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+      linkHotspots: [],
+      infoHotspots: []
+    },
+    {
+      id: 'tooker-6',
+      name: 'Tooker Study Space',
+      subtitle: 'View 5',
+      description: '360-degree view of the Tooker study space.',
+      imagePath: 'images/scenes/tooker espaces.JPG',
+      emoji: '📚',
+      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+      linkHotspots: [],
+      infoHotspots: []
+    }
 
-] /* end scenes */
+  ] /* end scenes */
 
 }; /* end APP_DATA */
