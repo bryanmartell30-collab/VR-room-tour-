@@ -205,111 +205,211 @@ var APP_DATA = {
     },
 
      
-    
-    /* TOOKER TOUR */
-
+--------- /* TOOKER TOUR */------------
+{
+  id: 'tooker-bridge',
+  name: 'Tooker Bridge',
+  group: 'TOOKER HALL',
+  subtitle: 'Starting Point',
+  description: 'Start your tour at the Tooker Bridge.',
+  image: 'images/scenes/tooker bridge-2.jpg',
+  emoji: '🌉',
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+  linkHotspots: [
     {
-      id: 'tooker-bridge',
-      name: 'Tooker Bridge',
-      subtitle: 'Starting Point',
-      description: 'Starting point of the Tooker virtual tour.',
-      imagePath: 'images/scenes/tooker bridge-2.jpg',
-      emoji: '🌉',
-      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
-      linkHotspots: [
-        { yaw: 0.5, pitch: 0, rotation: 0, target: 'tooker-view-15', label: 'Next: Tooker View 1.5' }
-      ],
-      infoHotspots: []
-    },
-
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-view-15',
+      label: 'Next Stop'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'tooker-view-15',
+  name: 'Tooker View 1.5',
+  group: 'TOOKER HALL',
+  subtitle: 'Second Stop',
+  description: 'Continue your tour through Tooker Hall.',
+  image: 'images/scenes/tooker house view 1.5-2.jpg',
+  emoji: '🏠',
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+  linkHotspots: [
     {
-      id: 'tooker-view-15',
-      name: 'Tooker View 1.5',
-      subtitle: 'Second Stop',
-      description: 'Tooker view panorama.',
-      imagePath: 'images/scenes/tooker house view 1.5-2.jpg',
-      emoji: '🏢',
-      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
-      linkHotspots: [
-        { yaw: -0.5, pitch: 0, rotation: 0, target: 'tooker-bridge', label: 'Back: Tooker Bridge' },
-        { yaw: 0.5, pitch: 0, rotation: 0, target: 'tooker-house-view', label: 'Next: Tooker House View' }
-      ],
-      infoHotspots: []
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-bridge',
+      label: 'Previous Stop'
     },
-
     {
-      id: 'tooker-house-view',
-      name: 'Tooker House View',
-      subtitle: 'Third Stop',
-      description: 'Tooker house view panorama.',
-      imagePath: 'images/scenes/tooker house view.jpg',
-      emoji: '🏠',
-      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
-      linkHotspots: [
-        { yaw: -0.5, pitch: 0, rotation: 0, target: 'tooker-view-15', label: 'Back: Tooker View 1.5' },
-        { yaw: 0.5, pitch: 0, rotation: 0, target: 'tooker-space-1', label: 'Next: Tooker Space 1' }
-      ],
-      infoHotspots: []
-    },
-
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-house-view',
+      label: 'Next Stop'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'tooker-house-view',
+  name: 'Tooker House View',
+  group: 'TOOKER HALL',
+  subtitle: 'Third Stop',
+  description: 'Explore the Tooker House view.',
+  image: 'images/scenes/tooker house view.jpg',
+  emoji: '🏡',
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+  linkHotspots: [
     {
-      id: 'tooker-space-1',
-      name: 'Tooker Space 1',
-      subtitle: 'Fourth Stop',
-      description: 'Tooker Space panorama 1.',
-      imagePath: 'images/scenes/tooker space 1.jpg',
-      emoji: '🛋️',
-      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
-      linkHotspots: [
-        { yaw: -0.5, pitch: 0, rotation: 0, target: 'tooker-house-view', label: 'Back: Tooker House View' },
-        { yaw: 0.5, pitch: 0, rotation: 0, target: 'tooker-space-2', label: 'Next: Tooker Space 2' }
-      ],
-      infoHotspots: []
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-view-15',
+      label: 'Previous Stop'
     },
-
     {
-      id: 'tooker-space-2',
-      name: 'Tooker Space 2',
-      subtitle: 'Fifth Stop',
-      description: 'Tooker Space panorama 2.',
-      imagePath: 'images/scenes/tooker space 2.0-2.jpg',
-      emoji: '🛋️',
-      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
-      linkHotspots: [
-        { yaw: -0.5, pitch: 0, rotation: 0, target: 'tooker-space-1', label: 'Back: Tooker Space 1' },
-        { yaw: 0.5, pitch: 0, rotation: 0, target: 'tooker-space-3', label: 'Next: Tooker Space 3' }
-      ],
-      infoHotspots: []
-    },
-
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-space-1',
+      label: 'Next Stop'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'tooker-space-1',
+  name: 'Tooker Space 1',
+  group: 'TOOKER HALL',
+  subtitle: 'Fourth Stop',
+  description: 'Explore the first Tooker space.',
+  image: 'images/scenes/tooker space 1.jpg',
+  emoji: '🛋️',
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+  linkHotspots: [
     {
-      id: 'tooker-space-3',
-      name: 'Tooker Space 3',
-      subtitle: 'Sixth Stop',
-      description: 'Tooker Space panorama 3.',
-      imagePath: 'images/scenes/tooker space 3.0-2.jpg',
-      emoji: '🛋️',
-      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
-      linkHotspots: [
-        { yaw: -0.5, pitch: 0, rotation: 0, target: 'tooker-space-2', label: 'Back: Tooker Space 2' },
-        { yaw: 0.5, pitch: 0, rotation: 0, target: 'tooker-espace-1', label: 'Next: Espace 1' }
-      ],
-      infoHotspots: []
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-house-view',
+      label: 'Previous Stop'
     },
-
     {
-      id: 'tooker-espace-1',
-      name: 'Espace 1',
-      subtitle: 'Final Stop',
-      description: 'Final panorama of the Tooker tour.',
-      imagePath: 'images/scenes/espace 1 tooker.jpg',
-      emoji: '🏢',
-      initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
-      linkHotspots: [
-        { yaw: -0.5, pitch: 0, rotation: 0, target: 'tooker-space-3', label: 'Back: Tooker Space 3' }
-      ],
-      infoHotspots: []
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-space-2',
+      label: 'Next Stop'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'tooker-space-2',
+  name: 'Tooker Space 2',
+  group: 'TOOKER HALL',
+  subtitle: 'Fifth Stop',
+  description: 'Explore the second Tooker space.',
+  image: 'images/scenes/tooker space 2.0-2.jpg',
+  emoji: '🛋️',
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+  linkHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-space-1',
+      label: 'Previous Stop'
     },
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-space-3',
+      label: 'Next Stop'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'tooker-space-3',
+  name: 'Tooker Space 3',
+  group: 'TOOKER HALL',
+  subtitle: 'Sixth Stop',
+  description: 'Explore the third Tooker space.',
+  image: 'images/scenes/tooker space 3.0-2.jpg',
+  emoji: '🛋️',
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+  linkHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-space-2',
+      label: 'Previous Stop'
+    },
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-espace-1',
+      label: 'Next Stop'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'tooker-espace-1',
+  name: 'Espace 1',
+  group: 'TOOKER HALL',
+  subtitle: 'Final Stop',
+  description: 'Finish your tour at Espace 1.',
+  image: 'images/scenes/espace 1 tooker.jpg',
+  emoji: '🏁',
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+  linkHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'tooker-space-3',
+      label: 'Previous Stop'
+    }
+  ],
+  infoHotspots: []
+}
+  
 
     
    
