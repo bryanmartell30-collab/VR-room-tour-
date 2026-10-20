@@ -205,20 +205,16 @@ var APP_DATA = {
     },
 
      
---------- /* TOOKER TOUR */------------
+/* ---- TOOKER TOUR ------------------------------------------ */
 {
   id: 'tooker-bridge',
   name: 'Tooker Bridge',
   group: 'TOOKER HALL',
   subtitle: 'Starting Point',
   description: 'Start your tour at the Tooker Bridge.',
-  image: 'images/scenes/tooker bridge-2.jpg',
+  imagePath: 'images/scenes/tooker bridge-2.jpg',
   emoji: '🌉',
-  initialViewParameters: {
-    yaw: 0,
-    pitch: 0,
-    fov: 1.4
-  },
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
   linkHotspots: [
     {
       yaw: 0,
@@ -236,13 +232,9 @@ var APP_DATA = {
   group: 'TOOKER HALL',
   subtitle: 'Second Stop',
   description: 'Continue your tour through Tooker Hall.',
-  image: 'images/scenes/tooker house view 1.5-2.jpg',
+  imagePath: 'images/scenes/tooker house view 1.5-2.jpg',
   emoji: '🏠',
-  initialViewParameters: {
-    yaw: 0,
-    pitch: 0,
-    fov: 1.4
-  },
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
   linkHotspots: [
     {
       yaw: 0,
@@ -267,13 +259,9 @@ var APP_DATA = {
   group: 'TOOKER HALL',
   subtitle: 'Third Stop',
   description: 'Explore the Tooker House view.',
-  image: 'images/scenes/tooker house view.jpg',
+  imagePath: 'images/scenes/tooker house view.jpg',
   emoji: '🏡',
-  initialViewParameters: {
-    yaw: 0,
-    pitch: 0,
-    fov: 1.4
-  },
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
   linkHotspots: [
     {
       yaw: 0,
@@ -298,13 +286,9 @@ var APP_DATA = {
   group: 'TOOKER HALL',
   subtitle: 'Fourth Stop',
   description: 'Explore the first Tooker space.',
-  image: 'images/scenes/tooker space 1.jpg',
+  imagePath: 'images/scenes/tooker space 1.jpg',
   emoji: '🛋️',
-  initialViewParameters: {
-    yaw: 0,
-    pitch: 0,
-    fov: 1.4
-  },
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
   linkHotspots: [
     {
       yaw: 0,
@@ -329,13 +313,9 @@ var APP_DATA = {
   group: 'TOOKER HALL',
   subtitle: 'Fifth Stop',
   description: 'Explore the second Tooker space.',
-  image: 'images/scenes/tooker space 2.0-2.jpg',
+  imagePath: 'images/scenes/tooker space 2.0-2.jpg',
   emoji: '🛋️',
-  initialViewParameters: {
-    yaw: 0,
-    pitch: 0,
-    fov: 1.4
-  },
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
   linkHotspots: [
     {
       yaw: 0,
@@ -360,13 +340,9 @@ var APP_DATA = {
   group: 'TOOKER HALL',
   subtitle: 'Sixth Stop',
   description: 'Explore the third Tooker space.',
-  image: 'images/scenes/tooker space 3.0-2.jpg',
+  imagePath: 'images/scenes/tooker space 3.0-2.jpg',
   emoji: '🛋️',
-  initialViewParameters: {
-    yaw: 0,
-    pitch: 0,
-    fov: 1.4
-  },
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
   linkHotspots: [
     {
       yaw: 0,
@@ -391,13 +367,9 @@ var APP_DATA = {
   group: 'TOOKER HALL',
   subtitle: 'Final Stop',
   description: 'Finish your tour at Espace 1.',
-  image: 'images/scenes/espace 1 tooker.jpg',
+  imagePath: 'images/scenes/espace 1 tooker.jpg',
   emoji: '🏁',
-  initialViewParameters: {
-    yaw: 0,
-    pitch: 0,
-    fov: 1.4
-  },
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
   linkHotspots: [
     {
       yaw: 0,
@@ -409,6 +381,7 @@ var APP_DATA = {
   ],
   infoHotspots: []
 }
+
   
 
     
