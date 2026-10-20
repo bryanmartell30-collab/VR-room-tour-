@@ -258,7 +258,7 @@
   var groupOrder = [];
 
   APP_DATA.scenes.forEach(function (sceneData) {
-    var groupName = sceneData.name || 'Other Locations';
+   var groupName = sceneData.group || sceneData.name || 'Other Locations';
     if (!groups[groupName]) {
       groups[groupName] = [];
       groupOrder.push(groupName);
