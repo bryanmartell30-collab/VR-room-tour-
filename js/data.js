@@ -380,10 +380,131 @@ var APP_DATA = {
     }
   ],
   infoHotspots: []
+},
+
+
+/* ---- NEW CAMPUS SPACES ---------------------------------- */
+{
+  id: 'ecf-espaces-placeholder',
+  name: 'ECF E-Spaces',
+  group: 'ECF E-SPACES',
+  subtitle: 'Photo Coming Soon',
+  description: 'Placeholder for ECF e-spaces. A 360-degree photo will be added later.',
+  imagePath: 'images/scenes/makerspace/placeholder.jpg',
+  emoji: '📍',
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+  linkHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'ecf-placeholder',
+      label: 'Next: ECF'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'ecf-placeholder',
+  name: 'ECF',
+  group: 'ECF',
+  subtitle: 'Photo Coming Soon',
+  description: 'Placeholder for ECF. A 360-degree photo will be added later.',
+  imagePath: 'images/scenes/makerspace/placeholder.jpg',
+  emoji: '🏢',
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+  linkHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'ecf-espaces-placeholder',
+      label: 'Previous: ECF E-Spaces'
+    },
+    {
+      yaw: 0.8,
+      pitch: 0,
+      rotation: 0,
+      target: 'ecg-placeholder',
+      label: 'Next: ECG Spaces'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'ecg-placeholder',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Photo Coming Soon',
+  description: 'Placeholder for ECG spaces. A 360-degree photo will be added later.',
+  imagePath: 'images/scenes/makerspace/placeholder.jpg',
+  emoji: '🏫',
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+  linkHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'ecf-placeholder',
+      label: 'Previous: ECF'
+    },
+    {
+      yaw: 0.8,
+      pitch: 0,
+      rotation: 0,
+      target: 'brickyard-placeholder',
+      label: 'Next: Brickyard'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'brickyard-placeholder',
+  name: 'Brickyard',
+  group: 'BRICKYARD',
+  subtitle: 'Photo Coming Soon',
+  description: 'Placeholder for Brickyard. A 360-degree photo will be added later.',
+  imagePath: 'images/scenes/makerspace/placeholder.jpg',
+  emoji: '🧱',
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+  linkHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'ecg-placeholder',
+      label: 'Previous: ECG Spaces'
+    },
+    {
+      yaw: 0.8,
+      pitch: 0,
+      rotation: 0,
+      target: 'study-spaces-placeholder',
+      label: 'Next: Study Spaces'
+    }
+  ],
+  infoHotspots: []
+},
+{
+  id: 'study-spaces-placeholder',
+  name: 'Study Spaces',
+  group: 'STUDY SPACES',
+  subtitle: 'Photo Coming Soon',
+  description: 'Placeholder for study spaces. A 360-degree photo will be added later.',
+  imagePath: 'images/scenes/makerspace/placeholder.jpg',
+  emoji: '📚',
+  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+  linkHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      rotation: 0,
+      target: 'brickyard-placeholder',
+      label: 'Previous: Brickyard'
+    }
+  ],
+  infoHotspots: []
 }
-
-  
-
     
    
     ] /* end scenes */
