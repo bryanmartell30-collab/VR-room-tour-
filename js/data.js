@@ -379,7 +379,16 @@ var APP_DATA = {
       label: 'Previous Stop'
     }
   ],
-  infoHotspots: []
+    infoHotspots: [
+  {
+    yaw: 0,
+    pitch: 0,
+    title: 'Tooker Hall Project Lockers',
+    text: 'These lockers are used to store student projects, materials, and other items related to their work.'
+  }
+]
+
+
 },
 
 
