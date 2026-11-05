@@ -267,7 +267,14 @@
   });
 
   groupOrder.forEach(function (groupName) {
-    var scenesInGroup = groups[groupName];
+  
+  var scenesInGroup = groups[groupName];
+
+  var visibleScenesInGroup = scenesInGroup.filter(function (sceneData) {
+    return !sceneData.hideFromSidebar;
+  });
+
+  if (visibleScenesInGroup.length === 0) return;
 
     var groupLi = document.createElement('li');
     groupLi.classList.add('scene-group');
@@ -296,7 +303,7 @@
       groupHeader.classList.toggle('collapsed');
     });
 
-    scenesInGroup.forEach(function (sceneData) {
+    visibleScenesInGroup.forEach(function (sceneData) {
       var li = document.createElement('li');
       li.dataset.sceneId = sceneData.id;
 
