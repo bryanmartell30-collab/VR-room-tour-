@@ -205,188 +205,254 @@ var APP_DATA = {
     },
 
      
-/* ---- TOOKER TOUR ------------------------------------------ */
+
+/* ---- TOOKER HALL WALKTHROUGH ------------------------------- */
+
 {
   id: 'tooker-bridge',
-  name: 'Tooker Bridge',
+  name: 'Tooker Hall',
   group: 'TOOKER HALL',
-  subtitle: 'Starting Point',
-  description: 'Start your tour at the Tooker Bridge.',
+  subtitle: 'Explore Tooker Hall',
+  description: 'Welcome to the Tooker Hall virtual walkthrough. Use the arrows to explore each area.',
   imagePath: 'images/scenes/tooker bridge-2.jpg',
   emoji: '🌉',
-  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
   linkHotspots: [
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-view-15',
-      label: 'Next Stop'
+      label: 'Next Area'
     }
   ],
+
   infoHotspots: []
 },
+
 {
   id: 'tooker-view-15',
-  name: 'Tooker View 1.5',
+  name: 'Tooker Hall',
   group: 'TOOKER HALL',
-  subtitle: 'Second Stop',
-  description: 'Continue your tour through Tooker Hall.',
+  subtitle: 'Tooker Hall View',
+  description: 'Continue exploring Tooker Hall.',
+  hideFromSidebar: true,
   imagePath: 'images/scenes/tooker house view 1.5-2.jpg',
   emoji: '🏠',
-  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
   linkHotspots: [
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-bridge',
-      label: 'Previous Stop'
+      label: 'Previous Area'
     },
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-house-view',
-      label: 'Next Stop'
+      label: 'Next Area'
     }
   ],
+
   infoHotspots: []
 },
+
 {
   id: 'tooker-house-view',
-  name: 'Tooker House View',
+  name: 'Tooker Hall',
   group: 'TOOKER HALL',
-  subtitle: 'Third Stop',
-  description: 'Explore the Tooker House view.',
+  subtitle: 'House View',
+  description: 'Explore the next viewpoint in Tooker Hall.',
+  hideFromSidebar: true,
   imagePath: 'images/scenes/tooker house view.jpg',
   emoji: '🏡',
-  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
   linkHotspots: [
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-view-15',
-      label: 'Previous Stop'
+      label: 'Previous Area'
     },
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-space-1',
-      label: 'Next Stop'
+      label: 'Next Area'
     }
   ],
+
   infoHotspots: []
 },
+
 {
   id: 'tooker-space-1',
-  name: 'Tooker Space 1',
+  name: 'Tooker Hall',
   group: 'TOOKER HALL',
-  subtitle: 'Fourth Stop',
-  description: 'Explore the first Tooker space.',
+  subtitle: 'First Space',
+  description: 'Explore the first Tooker student space.',
+  hideFromSidebar: true,
   imagePath: 'images/scenes/tooker space 1.jpg',
   emoji: '🛋️',
-  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
   linkHotspots: [
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-house-view',
-      label: 'Previous Stop'
+      label: 'Previous Area'
     },
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-space-2',
-      label: 'Next Stop'
+      label: 'Next Area'
     }
   ],
+
   infoHotspots: []
 },
+
 {
   id: 'tooker-space-2',
-  name: 'Tooker Space 2',
+  name: 'Tooker Hall',
   group: 'TOOKER HALL',
-  subtitle: 'Fifth Stop',
-  description: 'Explore the second Tooker space.',
+  subtitle: 'Second Space',
+  description: 'Continue through the Tooker student spaces.',
+  hideFromSidebar: true,
   imagePath: 'images/scenes/tooker space 2.0-2.jpg',
   emoji: '🛋️',
-  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
   linkHotspots: [
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-space-1',
-      label: 'Previous Stop'
+      label: 'Previous Area'
     },
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-space-3',
-      label: 'Next Stop'
+      label: 'Next Area'
     }
   ],
+
   infoHotspots: []
 },
+
 {
   id: 'tooker-space-3',
-  name: 'Tooker Space 3',
+  name: 'Tooker Hall',
   group: 'TOOKER HALL',
-  subtitle: 'Sixth Stop',
-  description: 'Explore the third Tooker space.',
+  subtitle: 'Third Space',
+  description: 'Explore the third Tooker student space.',
+  hideFromSidebar: true,
   imagePath: 'images/scenes/tooker space 3.0-2.jpg',
   emoji: '🛋️',
-  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
   linkHotspots: [
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-space-2',
-      label: 'Previous Stop'
+      label: 'Previous Area'
     },
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-espace-1',
-      label: 'Next Stop'
+      label: 'Next Area'
     }
   ],
+
   infoHotspots: []
 },
+
 {
   id: 'tooker-espace-1',
-  name: 'Espace 1',
+  name: 'Tooker Hall',
   group: 'TOOKER HALL',
-  subtitle: 'Final Stop',
-  description: 'Finish your tour at Espace 1.',
+  subtitle: 'Final Space',
+  description: 'Finish your Tooker Hall walkthrough at the project lockers.',
+  hideFromSidebar: true,
   imagePath: 'images/scenes/espace 1 tooker.jpg',
   emoji: '🏁',
-  initialViewParameters: { yaw: 0, pitch: 0, fov: 1.4 },
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
   linkHotspots: [
     {
       yaw: 0,
       pitch: 0,
       rotation: 0,
       target: 'tooker-space-3',
-      label: 'Previous Stop'
+      label: 'Previous Area'
     }
   ],
-    infoHotspots: [
-  {
-    yaw: 0,
-    pitch: 0,
-    title: 'Tooker Hall Project Lockers',
-    text: 'These lockers are used to store student projects, materials, and other items related to their work.'
-  }
-]
+
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Tooker Hall Project Lockers',
+      text: 'These lockers are used to store student projects, materials, and other items related to their work.'
+    }
+  ]
+},
+
+/* ---- END TOOKER HALL WALKTHROUGH --------------------------- */
 
 
 },
