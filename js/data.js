@@ -455,8 +455,6 @@ var APP_DATA = {
 /* ---- END TOOKER HALL WALKTHROUGH --------------------------- */
 
 
-},
-
 
 /* ---- NEW CAMPUS SPACES ---------------------------------- */
 {
