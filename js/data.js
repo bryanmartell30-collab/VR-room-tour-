@@ -225,8 +225,8 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: -0.9,
-      pitch: -0.15,
+      yaw: -0.2,
+      pitch: -0.5,
       rotation: 0,
       target: 'tooker-view-15',
       label: 'Next Area'
