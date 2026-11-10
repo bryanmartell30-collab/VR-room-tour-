@@ -261,7 +261,7 @@ var APP_DATA = {
       label: 'Previous Area'
     },
     {
-      yaw: 0,
+      yaw: -2.8,
       pitch: 0.5,
       rotation: 0,
       target: 'tooker-house-view',
