@@ -247,7 +247,7 @@ var APP_DATA = {
   emoji: '🏠',
 
   initialViewParameters: {
-    yaw: -1.9,
+    yaw: -2.0,
     pitch: 0,
     fov: 1.4
   },
