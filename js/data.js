@@ -391,7 +391,7 @@ var APP_DATA = {
   emoji: '🛋️',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: -0.9,
     pitch: 0,
     fov: 1.4
   },
@@ -427,7 +427,7 @@ var APP_DATA = {
   emoji: '🏁',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: -0.9,
     pitch: 0,
     fov: 1.4
   },
