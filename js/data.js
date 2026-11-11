@@ -283,7 +283,7 @@ var APP_DATA = {
   emoji: '🏡',
 
   initialViewParameters: {
-    yaw: -3.0,
+    yaw: -3.2,
     pitch: 0,
     fov: 1.4
   },
@@ -297,8 +297,8 @@ var APP_DATA = {
       label: 'Previous Area'
     },
     {
-      yaw: 0,
-      pitch: 0,
+      yaw: -3.2,
+      pitch: -0.5,
       rotation: 0,
       target: 'tooker-space-1',
       label: 'Next Area'
