@@ -298,7 +298,7 @@ var APP_DATA = {
     },
     {
       yaw: -3.2,
-      pitch: -0.5,
+      pitch: 0,
       rotation: 0,
       target: 'tooker-space-1',
       label: 'Next Area'
