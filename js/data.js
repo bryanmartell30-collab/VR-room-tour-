@@ -333,8 +333,8 @@ var APP_DATA = {
       label: 'Previous Area'
     },
     {
-      yaw: 0,
-      pitch: 0,
+      yaw: -3.5,
+      pitch: 0.5,
       rotation: 0,
       target: 'tooker-space-2',
       label: 'Next Area'
@@ -355,7 +355,7 @@ var APP_DATA = {
   emoji: '🛋️',
 
   initialViewParameters: {
-    yaw: 2.0,
+    yaw: 0.8,
     pitch: 0,
     fov: 1.4
   },
