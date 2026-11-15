@@ -254,7 +254,7 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: 3,
+      yaw: 0.2,
       pitch: 0.5,
       rotation: 0,
       target: 'tooker-bridge',
