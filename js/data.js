@@ -444,7 +444,7 @@ var APP_DATA = {
 
   infoHotspots: [
     {
-      yaw: 0,
+      yaw: -0.7,
       pitch: 0,
       title: 'Tooker Hall Project Lockers',
       text: 'These lockers are used to store student projects, materials, and other items related to their work.'
