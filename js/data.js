@@ -362,7 +362,7 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: 0.7,
+      yaw: 1,
       pitch: 0.5,
       rotation: 0,
       target: 'tooker-space-1',
@@ -398,7 +398,7 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: 0,
+      yaw: 0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'tooker-space-2',
