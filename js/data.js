@@ -398,7 +398,7 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: -0.8,
+      yaw: -1,
       pitch: 0.5,
       rotation: 0,
       target: 'tooker-space-2',
@@ -444,7 +444,7 @@ var APP_DATA = {
 
   infoHotspots: [
     {
-      yaw: -0.7,
+      yaw: -3,
       pitch: 0,
       title: 'Tooker Hall Project Lockers',
       text: 'These lockers are used to store student projects, materials, and other items related to their work.'
