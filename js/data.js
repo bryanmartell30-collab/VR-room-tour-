@@ -398,8 +398,8 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: 1,
-      pitch: 0.5,
+      yaw: 0.5,
+      pitch: 0.3,
       rotation: 0,
       target: 'tooker-space-2',
       label: 'Previous Area'
