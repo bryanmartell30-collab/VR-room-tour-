@@ -467,15 +467,15 @@ var APP_DATA = {
   emoji: '🌴',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: -0.5,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 0,
-      pitch: 0,
+      yaw: -0.6,
+      pitch: 0.5,
       rotation: 0,
       target: 'ecg-palm-walk-continued',
       label: 'Next Area'
