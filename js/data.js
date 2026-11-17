@@ -481,7 +481,7 @@ infoHotspots: [
 
   linkHotspots: [
     {
-      yaw: -0.11,
+      yaw: -0.15,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-palm-walk-continued',
