@@ -398,7 +398,7 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: 0.17,
+      yaw: 0.14,
       pitch: 0.4,
       rotation: 0,
       target: 'tooker-space-2',
@@ -474,7 +474,7 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: 0.15,
+      yaw: 0.18,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-palm-walk-continued',
@@ -496,7 +496,7 @@ var APP_DATA = {
   emoji: '🌴',
 
   initialViewParameters: {
-    yaw: 2.2,
+    yaw: 2.5,
     pitch: 0,
     fov: 1.4
   },
