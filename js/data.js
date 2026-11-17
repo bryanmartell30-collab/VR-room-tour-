@@ -474,7 +474,7 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: -0.6,
+      yaw: 0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-palm-walk-continued',
