@@ -415,7 +415,7 @@ var APP_DATA = {
 
 infoHotspots: [
   {
-    yaw: 0,
+    yaw: -2.5,
     pitch: 0,
     title: 'Tooker E-Spaces',
     text: 'These ground-floor makerspaces are commonly used by students in EPICS for lectures and meeting times, as well as innovation workshops and skill session events. Key card access is required to enter these spaces. For more information, call Tooker House at (480) 727-3463.'
