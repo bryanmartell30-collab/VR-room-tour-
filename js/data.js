@@ -517,7 +517,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: -2.5,
+      yaw: -2.7,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-cross-section-near',
@@ -539,7 +539,7 @@ infoHotspots: [
   emoji: '🏫',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: -3.5,
     pitch: 0,
     fov: 1.4
   },
