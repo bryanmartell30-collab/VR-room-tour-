@@ -515,11 +515,48 @@ infoHotspots: [
       rotation: 0,
       target: 'ecg-placeholder',
       label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-cross-section-near',
+      label: 'Next Area'
     }
   ],
 
   infoHotspots: []
 },
+
+{
+  id: 'ecg-cross-section-near',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Cross Section Near ECG',
+  description: 'This view shows another area near the ECG campus buildings. Continue exploring the surrounding campus environment.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/ECG Espaces/cross Section near ECG.jpg',
+  emoji: '🏫',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-palm-walk-continued',
+      label: 'Previous Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
 
 /* ---- ECF E-SPACES PLACEHOLDER ----------------------------- */
 
