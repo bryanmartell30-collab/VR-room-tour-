@@ -517,7 +517,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: -2.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-cross-section-near',
