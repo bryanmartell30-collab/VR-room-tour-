@@ -106,104 +106,355 @@ var APP_DATA = {
       ]
     },
 
-    /* ------------------------------------------------------- */
+   
+/* ---- MAKER SPACE WALKTHROUGH ------------------------------- */
+
+{
+  id: 'maker-space-entrance',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: 'Entrance',
+  description: 'Welcome to the Maker Space at Hayden Library. Begin exploring the space using the navigation arrows.',
+  imagePath: 'images/scenes/makerspace/entrance MakerSpace.JPG',
+  emoji: '🚪',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
     {
-      id:          'maker-space-entrance',
-      name:        'Maker Space at Hayden Library',
-      subtitle:    'Entrance',
-      description: 'The main entrance of the Maker Space.',
-      imagePath:   'images/scenes/makerspace/placeholder.jpg',
-      emoji:       '🚪',
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-entrance-point-1',
+      label: 'Next Area'
+    }
+  ],
 
-      initialViewParameters: {
-        yaw:   0.0,
-        pitch: 0.0,
-        fov:   1.4
-      },
+  infoHotspots: []
+},
 
-      linkHotspots: [
-        {
-          yaw:      0.5,
-          pitch:    0.0,
-          rotation: 0,
-          target:   'placeholder',
-          label:    'placeholder'
-        },
-        {
-          yaw:     -0.5,
-          pitch:    0.0,
-          rotation: 0,
-          target:   'placeholder',
-          label:    'placeholder'
-        }
-      ],
+{
+  id: 'maker-space-entrance-point-1',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: 'Entrance Point 1',
+  description: 'Explore the first viewpoint inside the Maker Space.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/makerspace/entrance point 1 view .JPG',
+  emoji: '📍',
 
-      infoHotspots: []
-    },
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
 
-    /* ------------------------------------------------------- */
+  linkHotspots: [
     {
-      id:          'maker-space-3d-printers',
-      name:        'Maker Space at Hayden Library',
-      subtitle:    '3D Printers',
-      description: 'The 3D printing and rapid prototyping area.',
-      imagePath:   'images/scenes/makerspace/placeholder.jpg',
-      emoji:       '🖨️',
-
-      initialViewParameters: {
-        yaw:   0.0,
-        pitch: 0.0,
-        fov:   1.4
-      },
-
-      linkHotspots: [
-        {
-          yaw:      3.14,
-          pitch:    0.0,
-          rotation: 0,
-          target:   'placeholder',
-          label:    'placeholder'
-        },
-        {
-          yaw:      1.0,
-          pitch:    0.0,
-          rotation: 0,
-          target:   'placeholder',
-          label:    'placeholder'
-        }
-      ],
-
-      infoHotspots: []
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-entrance',
+      label: 'Previous Area'
     },
-
-    /* ------------------------------------------------------- */
     {
-      id:          'maker-space-laser-cutters',
-      name:        'Maker Space at Hayden Library',
-      subtitle:    'Laser Cutters',
-      description: 'Laser cutting and engraving stations.',
-      imagePath:   'images/scenes/makerspace/placeholder.jpg',
-      emoji:       '✂️',
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-entrance-point-2',
+      label: 'Next Area'
+    }
+  ],
 
-      initialViewParameters: {
-        yaw:   0.0,
-        pitch: 0.0,
-        fov:   1.4
-      },
+  infoHotspots: []
+},
 
-      linkHotspots: [
-        {
-          yaw:      3.14,
-          pitch:    0.0,
-          rotation: 0,
-          target:   'placeholder',
-          label:    'placeholder'
-        }
-      ],
+{
+  id: 'maker-space-entrance-point-2',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: 'Entrance Point 2',
+  description: 'Continue exploring the Maker Space from another viewpoint.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/makerspace/entrance point 2 view .JPG',
+  emoji: '📍',
 
-      infoHotspots: []
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-entrance-point-1',
+      label: 'Previous Area'
     },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-entrance-point-3',
+      label: 'Next Area'
+    }
+  ],
 
+  infoHotspots: []
+},
+
+{
+  id: 'maker-space-entrance-point-3',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: 'Entrance Point 3',
+  description: 'Continue through the Maker Space toward the equipment areas.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/makerspace/entrance point 3 view .JPG',
+  emoji: '📍',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-entrance-point-2',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-laser-point-1',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'maker-space-laser-point-1',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: 'Laser Cutters Point 1',
+  description: 'Explore the laser cutting area of the Maker Space.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/makerspace/laser cutters point 1.JPG',
+  emoji: '✂️',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-entrance-point-3',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-laser-point-2',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'maker-space-laser-point-2',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: 'Laser Cutters Point 2',
+  description: 'Continue exploring the laser cutting equipment.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/makerspace/laser cutters point 2.JPG',
+  emoji: '✂️',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-laser-point-1',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-laser-point-3',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'maker-space-laser-point-3',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: 'Laser Cutters Point 3',
+  description: 'View another part of the laser cutting area.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/makerspace/laser cutters point 3 .JPG',
+  emoji: '✂️',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-laser-point-2',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-laser-point-4',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'maker-space-laser-point-4',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: 'Laser Cutters Point 4',
+  description: 'Explore the final viewpoint of the laser cutting area.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/makerspace/laser cutters point 4.JPG',
+  emoji: '✂️',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-laser-point-3',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-3d-print-room',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'maker-space-3d-print-room',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: '3D Printing Room',
+  description: 'Explore the 3D printing and prototyping area of the Maker Space.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/makerspace/makerspace 3d print room .JPG',
+  emoji: '🖨️',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-laser-point-4',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-3d-print-point-1',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'maker-space-3d-print-point-1',
+  name: 'Maker Space at Hayden Library',
+  group: 'MAKER SPACE',
+  subtitle: '3D Printing Point 1',
+  description: 'Continue exploring the 3D printing area from another viewpoint.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/makerspace/makerspace 3d print 1.5.JPG',
+  emoji: '🖨️',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'maker-space-3d-print-room',
+      label: 'Previous Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+/* ---- END MAKER SPACE WALKTHROUGH --------------------------- */
      
 
 /* ---- TOOKER HALL WALKTHROUGH ------------------------------- */
