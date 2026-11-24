@@ -826,21 +826,21 @@ infoHotspots: [
   emoji: '🚪',
 
   initialViewParameters: {
-    yaw: -0.5,
+    yaw: -0.1,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 3,
+      yaw: -3.2,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-cross-section-near',
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: 3,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-1',
@@ -869,7 +869,7 @@ infoHotspots: [
 
   linkHotspots: [
     {
-      yaw: -0.5,
+      yaw: -0.3,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-entrance',
@@ -912,7 +912,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: -0.2,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-3',
@@ -948,7 +948,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: -0.2,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-4',
@@ -970,7 +970,7 @@ infoHotspots: [
   emoji: '📍',
 
   initialViewParameters: {
-    yaw: -3.5,
+    yaw: -3,
     pitch: 0,
     fov: 1.4
   },
@@ -984,8 +984,8 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: -2.9,
-      pitch: 0.2,
+      yaw: -3,
+      pitch: 0.4,
       rotation: 0,
       target: 'ecg-point-5',
       label: 'Next Area'
@@ -1013,7 +1013,7 @@ infoHotspots: [
 
   linkHotspots: [
     {
-      yaw: -3,
+      yaw: -3.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-4',
@@ -1085,7 +1085,7 @@ infoHotspots: [
 
   linkHotspots: [
     {
-      yaw: 2,
+      yaw: -0.7,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-6',
