@@ -119,14 +119,14 @@ var APP_DATA = {
   emoji: '🚪',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: 0.8,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: -0.5,
+      yaw: 0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-1',
@@ -148,21 +148,21 @@ var APP_DATA = {
   emoji: '📍',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: 3,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: 1,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance',
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: 4,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-2',
