@@ -469,19 +469,19 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Palm Walk',
-  description: 'Explore Palm Walk at the ECG campus.',
+  description: 'Welcome to the ECG Spaces virtual walkthrough! Start here and follow the arrows to explore the different areas.',
   imagePath: 'images/scenes/ECG Espaces/palm walk.jpg',
   emoji: '🌴',
 
   initialViewParameters: {
-    yaw: -0.2,
+    yaw: 0,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: -0.15,
+      yaw: -0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-palm-walk-continued',
@@ -497,13 +497,13 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Palm Walk Continued',
-  description: 'Continue exploring Palm Walk at ECG.',
+  description: 'Continue along Palm Walk to explore more of the ECG Spaces area.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/palm walk continued.jpg',
   emoji: '🌴',
 
   initialViewParameters: {
-    yaw: 3.8,
+    yaw: 0,
     pitch: 0,
     fov: 1.4
   },
@@ -517,7 +517,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: -2.7,
+      yaw: -0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-cross-section-near',
@@ -533,13 +533,13 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Cross Section Near ECG',
-  description: 'This view shows another area near the ECG campus buildings. Continue exploring the surrounding campus environment.',
+  description: 'This panorama shows another viewpoint near the ECG area.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/cross Section near ECG.jpg',
-  emoji: '🏫',
+  emoji: '📍',
 
   initialViewParameters: {
-    yaw: -3.5,
+    yaw: 0,
     pitch: 0,
     fov: 1.4
   },
@@ -551,12 +551,299 @@ infoHotspots: [
       rotation: 0,
       target: 'ecg-palm-walk-continued',
       label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-entrance',
+      label: 'Next Area'
     }
   ],
 
   infoHotspots: []
 },
 
+{
+  id: 'ecg-entrance',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Entrance',
+  description: 'Explore the entrance area of the ECG Spaces walkthrough.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/ECG Espaces/Entrance.jpg',
+  emoji: '🚪',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-cross-section-near',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-1',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'ecg-point-1',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Point 1',
+  description: 'This panorama shows the first viewpoint inside the ECG area.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/ECG Espaces/Point 1.jpg',
+  emoji: '📍',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-entrance',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-2',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'ecg-point-2',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Point 2',
+  description: 'This panorama shows the second viewpoint in the ECG area.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/ECG Espaces/Point 2.jpg',
+  emoji: '📍',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-1',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-3',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'ecg-point-3',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Point 3',
+  description: 'This panorama shows the third viewpoint in the ECG area.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/ECG Espaces/Point 3.jpg',
+  emoji: '📍',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-2',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-4',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'ecg-point-4',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Point 4',
+  description: 'This panorama shows the fourth viewpoint in the ECG area.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/ECG Espaces/Point 4.jpg',
+  emoji: '📍',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-3',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-5',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'ecg-point-5',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Point 5',
+  description: 'This panorama shows the fifth viewpoint in the ECG area.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/ECG Espaces/Point 5.jpg',
+  emoji: '📍',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-4',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-6-1',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'ecg-point-6-1',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Point 6.1',
+  description: 'This panorama shows another viewpoint in the ECG area, continuing the campus walkthrough.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/ECG Espaces/Point 6.1.jpg.jpg',
+  emoji: '📍',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-5',
+      label: 'Previous Area'
+    },
+    {
+      yaw: -0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-7',
+      label: 'Next Area'
+    }
+  ],
+
+  infoHotspots: []
+},
+
+{
+  id: 'ecg-point-7',
+  name: 'ECG Spaces',
+  group: 'ECG',
+  subtitle: 'Point 7',
+  description: 'This panorama shows the final viewpoint in the ECG area walkthrough.',
+  hideFromSidebar: true,
+  imagePath: 'images/scenes/ECG Espaces/Point 7.jpg',
+  emoji: '📍',
+
+  initialViewParameters: {
+    yaw: 0,
+    pitch: 0,
+    fov: 1.4
+  },
+
+  linkHotspots: [
+    {
+      yaw: 0.5,
+      pitch: 0.5,
+      rotation: 0,
+      target: 'ecg-point-6-1',
+      label: 'Previous Area'
+    }
+  ],
+
+  infoHotspots: []
+},
 
 /* ---- ECF E-SPACES PLACEHOLDER ----------------------------- */
 
