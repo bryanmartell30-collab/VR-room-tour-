@@ -126,7 +126,7 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: 0.7,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-1',
@@ -155,14 +155,14 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: 1,
+      yaw: 1.5,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance',
       label: 'Previous Area'
     },
     {
-      yaw: 4,
+      yaw: 2.5,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-2',
@@ -184,21 +184,21 @@ var APP_DATA = {
   emoji: '📍',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: -0.9,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: -0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-1',
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: -0.9,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-3',
@@ -220,21 +220,21 @@ var APP_DATA = {
   emoji: '📍',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: 1,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: 2,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-2',
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: 2.6,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-1',
@@ -256,21 +256,21 @@ var APP_DATA = {
   emoji: '✂️',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: -0.9,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: 0.8,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-3',
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: -0.9,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-2',
@@ -292,22 +292,22 @@ var APP_DATA = {
   emoji: '✂️',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: -0.5,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: -0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-1',
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
-      pitch: 0.5,
+      yaw: -0.7,
+      pitch: 0.2,
       rotation: 0,
       target: 'maker-space-laser-point-3',
       label: 'Next Area'
@@ -328,21 +328,21 @@ var APP_DATA = {
   emoji: '✂️',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: -0.9,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: -1,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-2',
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: -1.5,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-4',
@@ -364,7 +364,7 @@ var APP_DATA = {
   emoji: '✂️',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: -0.5,
     pitch: 0,
     fov: 1.4
   },
@@ -378,7 +378,7 @@ var APP_DATA = {
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: -0.7,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-3d-print-room',
@@ -400,21 +400,21 @@ var APP_DATA = {
   emoji: '🖨️',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: 0.6,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: 2,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-4',
       label: 'Previous Area'
     },
     {
-      yaw: -0.5,
+      yaw: 0.9,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-3d-print-point-1',
@@ -436,14 +436,14 @@ var APP_DATA = {
   emoji: '🖨️',
 
   initialViewParameters: {
-    yaw: 0,
+    yaw: 03.5,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: 3,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-3d-print-room',
