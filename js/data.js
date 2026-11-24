@@ -826,7 +826,7 @@ infoHotspots: [
   emoji: '🚪',
 
   initialViewParameters: {
-    yaw: 0.5,
+    yaw: -0.5,
     pitch: 0,
     fov: 1.4
   },
@@ -840,7 +840,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: 0.5,
+      yaw: -0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-1',
@@ -869,14 +869,14 @@ infoHotspots: [
 
   linkHotspots: [
     {
-      yaw: 0.5,
+      yaw: -0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-entrance',
       label: 'Previous Area'
     },
     {
-      yaw: -2.8,
+      yaw: -3,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-2',
@@ -912,7 +912,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: 0.5,
+      yaw: -0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-3',
@@ -948,7 +948,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: 0.5,
+      yaw: -0.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-4',
@@ -970,7 +970,7 @@ infoHotspots: [
   emoji: '📍',
 
   initialViewParameters: {
-    yaw: -2.9,
+    yaw: -3.5,
     pitch: 0,
     fov: 1.4
   },
@@ -978,14 +978,14 @@ infoHotspots: [
   linkHotspots: [
     {
       yaw: 1.9,
-      pitch: 0.3,
+      pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-3',
       label: 'Previous Area'
     },
     {
       yaw: -2.9,
-      pitch: 0.6,
+      pitch: 0.2,
       rotation: 0,
       target: 'ecg-point-5',
       label: 'Next Area'
@@ -1013,7 +1013,7 @@ infoHotspots: [
 
   linkHotspots: [
     {
-      yaw: -2.6,
+      yaw: -3,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-4',
@@ -1021,7 +1021,7 @@ infoHotspots: [
     },
     {
       yaw: 0.5,
-      pitch: 0.6,
+      pitch: 0.2,
       rotation: 0,
       target: 'ecg-point-6',
       label: 'Next Area'
@@ -1078,14 +1078,14 @@ infoHotspots: [
   emoji: '📍',
 
   initialViewParameters: {
-    yaw: 2.9,
+    yaw: 3.2,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 2.5,
+      yaw: 2,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-6',
