@@ -191,7 +191,7 @@ var APP_DATA = {
 
   linkHotspots: [
     {
-      yaw: 0.9,
+      yaw: 0.6,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-1',
@@ -220,21 +220,21 @@ var APP_DATA = {
   emoji: '📍',
 
   initialViewParameters: {
-    yaw: 1.5,
+    yaw: 2.5,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: -2,
+      yaw: -4,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-2',
       label: 'Previous Area'
     },
     {
-      yaw: 2.6,
+      yaw: 2.4,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-1',
@@ -256,21 +256,21 @@ var APP_DATA = {
   emoji: '✂️',
 
   initialViewParameters: {
-    yaw: -1.5,
+    yaw: -1.8,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: 1,
+      yaw: 1.5,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-entrance-point-3',
       label: 'Previous Area'
     },
     {
-      yaw: -1.5,
+      yaw: -1.8,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-2',
@@ -306,7 +306,7 @@ var APP_DATA = {
       label: 'Previous Area'
     },
     {
-      yaw: -0.7,
+      yaw: -0.4,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-3',
@@ -342,7 +342,7 @@ var APP_DATA = {
       label: 'Previous Area'
     },
     {
-      yaw: -3.5,
+      yaw: -3,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-laser-point-4',
@@ -400,7 +400,7 @@ var APP_DATA = {
   emoji: '🖨️',
 
   initialViewParameters: {
-    yaw: -0.6,
+    yaw: -0.9,
     pitch: 0,
     fov: 1.4
   },
@@ -414,7 +414,7 @@ var APP_DATA = {
       label: 'Previous Area'
     },
     {
-      yaw: -0.6,
+      yaw: 0.4,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-3d-print-point-1',
@@ -436,14 +436,14 @@ var APP_DATA = {
   emoji: '🖨️',
 
   initialViewParameters: {
-    yaw: 3,
+    yaw: 3.5,
     pitch: 0,
     fov: 1.4
   },
 
   linkHotspots: [
     {
-      yaw: -2.5,
+      yaw: -3.4,
       pitch: 0.5,
       rotation: 0,
       target: 'maker-space-3d-print-room',
