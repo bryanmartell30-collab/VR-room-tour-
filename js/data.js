@@ -107,7 +107,6 @@ var APP_DATA = {
     },
 
    
-
 /* ---- MAKER SPACE WALKTHROUGH ------------------------------- */
 
 {
@@ -115,7 +114,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: 'Entrance',
-  description: 'Welcome to the Maker Space at Hayden Library. Begin exploring the space using the navigation arrows.',
+  description: 'This is the entrance to the Maker Space, located on the third floor of Hayden Library at ASU. Students can use this space to create projects, laser cut materials, and 3D print their designs.',
   imagePath: 'images/scenes/makerspace/entrance MakerSpace.JPG',
   emoji: '🚪',
 
@@ -135,14 +134,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Maker Space Entrance',
-      text: 'This is the entrance to the Maker Space, located on the third floor of Hayden Library at ASU. Students can use this space to create projects, laser cut materials, and 3D print their designs.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -150,7 +142,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: 'Entrance Point 1',
-  description: 'Explore the first viewpoint inside the Maker Space.',
+  description: 'This viewpoint provides a wider look at the Maker Space entrance. You can see a whiteboard and chairs, giving students an area to gather, collaborate, and discuss their projects.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/makerspace/entrance point 1 view .JPG',
   emoji: '📍',
@@ -178,14 +170,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Maker Space Overview',
-      text: 'This viewpoint provides a wider look at the Maker Space entrance. You can see a whiteboard and chairs, giving students an area to gather, collaborate, and discuss their projects.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -193,7 +178,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: 'Entrance Point 2',
-  description: 'Continue exploring the Maker Space from another viewpoint.',
+  description: 'This view shows the back of the Maker Space, including the workbenches and tables where students can work on their projects, build creations, and collaborate with others.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/makerspace/entrance point 2 view .JPG',
   emoji: '📍',
@@ -221,14 +206,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Maker Space Work Area',
-      text: 'This view shows the back of the Maker Space, including the workbenches and tables where students can work on their projects, build creations, and collaborate with others.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -236,7 +214,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: 'Entrance Point 3',
-  description: 'Continue through the Maker Space toward the equipment areas.',
+  description: 'This view highlights the whiteboard at the back of the room and the different types of machines available in the Maker Space. Students can use this equipment to create, design, and work on hands-on projects.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/makerspace/entrance point 3 view .JPG',
   emoji: '📍',
@@ -264,14 +242,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Whiteboard and Maker Equipment',
-      text: 'This view highlights the whiteboard at the back of the room and the different types of machines available in the Maker Space. Students can use this equipment to create, design, and work on hands-on projects.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -279,7 +250,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: 'Laser Cutters Point 1',
-  description: 'Explore the laser cutting area of the Maker Space.',
+  description: 'This view introduces the laser cutters available in the Maker Space. In the next scene, we will take a closer look at the room where the laser cutters are located.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/makerspace/laser cutters point 1.JPG',
   emoji: '✂️',
@@ -307,14 +278,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Laser Cutting Area',
-      text: 'This view introduces the laser cutters available in the Maker Space. In the next scene, we will take a closer look at the room where the laser cutters are located.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -322,7 +286,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: 'Laser Cutters Point 2',
-  description: 'Continue exploring the laser cutting equipment.',
+  description: 'This view shows two laser cutters and a desk with a computer in the middle. Students can use the computer as a workstation when preparing and working on their laser-cutting projects.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/makerspace/laser cutters point 2.JPG',
   emoji: '✂️',
@@ -350,14 +314,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Laser Cutters and Workstation',
-      text: 'This view shows two laser cutters and a desk with a computer in the middle. Students can use the computer as a workstation when preparing and working on their laser-cutting projects.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -365,7 +322,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: 'Laser Cutters Point 3',
-  description: 'View another part of the laser cutting area.',
+  description: 'This view shows the laser-cutting room from the outside, giving students a look at the room’s layout and its surroundings within the Maker Space.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/makerspace/laser cutters point 3 .JPG',
   emoji: '✂️',
@@ -393,14 +350,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Laser Cutting Room – Outside View',
-      text: 'This view shows the laser-cutting room from the outside, giving students a look at the room’s layout and its surroundings within the Maker Space.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -408,7 +358,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: 'Laser Cutters Point 4',
-  description: 'Explore the final viewpoint of the laser cutting area.',
+  description: 'This view provides a look across the middle of the Maker Space, showing the overall layout of the room and the different areas students can use to work on their projects.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/makerspace/laser cutters point 4.JPG',
   emoji: '✂️',
@@ -436,14 +386,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Maker Space – Room Overview',
-      text: 'This view provides a look across the middle of the Maker Space, showing the overall layout of the room and the different areas students can use to work on their projects.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -451,7 +394,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: '3D Printing Room',
-  description: 'Explore the 3D printing and prototyping area of the Maker Space.',
+  description: 'This view introduces the room where the Maker Space’s 3D printers are located. Students can use these printers to turn their digital designs into physical objects and bring their projects to life.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/makerspace/makerspace 3d print room .JPG',
   emoji: '🖨️',
@@ -479,14 +422,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: '3D Printing Room',
-      text: 'This view introduces the room where the Maker Space’s 3D printers are located. Students can use these printers to turn their digital designs into physical objects and bring their projects to life.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -494,7 +430,7 @@ var APP_DATA = {
   name: 'Maker Space at Hayden Library',
   group: 'MAKER SPACE',
   subtitle: '3D Printing Point 1',
-  description: 'Continue exploring the 3D printing area from another viewpoint.',
+  description: 'This view shows the back of the 3D printing room, including the different 3D printers available for student projects. It also provides a view of how students can access the room from the main Maker Space area.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/makerspace/makerspace 3d print 1.5.JPG',
   emoji: '🖨️',
@@ -515,14 +451,7 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: '3D Printers and Room Access',
-      text: 'This view shows the back of the 3D printing room, including the different 3D printers available for student projects. It also provides a view of how students can access the room from the main Maker Space area.'
-    }
-  ]
+  infoHotspots: []
 },
 
 /* ---- END MAKER SPACE WALKTHROUGH --------------------------- */
@@ -783,14 +712,14 @@ infoHotspots: [
 
 /* ---- END TOOKER HALL WALKTHROUGH --------------------------- */
 
-
 /* ---- ECG SPACES WALKTHROUGH ------------------------------- */
+
 {
   id: 'ecg-placeholder',
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Palm Walk',
-  description: 'Explore Palm Walk at the ECG campus.',
+  description: 'Palm Walk is a major pedestrian walkway on the ASU Tempe campus. Students use this pathway to travel between classes and campus buildings. It provides access to nearby engineering classrooms and other academic spaces.',
   imagePath: 'images/scenes/ECG Espaces/palm walk.jpg',
   emoji: '🌴',
 
@@ -810,14 +739,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Palm Walk',
-      text: 'This is Palm Walk, a major pedestrian walkway on the ASU Tempe campus. Students use this pathway to travel between classes and campus buildings. It provides access to nearby engineering classrooms and other academic spaces.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -825,7 +747,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Palm Walk Continued',
-  description: 'Continue exploring Palm Walk at ECG.',
+  description: 'As you continue along Palm Walk, the Science Center is on your left. This building houses many of the science labs where students attend lab classes and complete hands-on coursework.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/palm walk continued.jpg',
   emoji: '🌴',
@@ -853,14 +775,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Science Center',
-      text: 'As you continue along Palm Walk, the Science Center is on your left. This building houses many of the science labs where students attend lab classes and complete hands-on coursework.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -868,7 +783,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Cross Section Near ECG',
-  description: 'This view shows another area near the ECG campus buildings. Continue exploring the surrounding campus environment.',
+  description: 'This area is a cross-section where Palm Walk divides into multiple walkways, allowing students to travel between different parts of campus. Straight ahead are the ECG Center building and the ECG E-Spaces, which provide additional academic and study spaces for students.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/cross Section near ECG.jpg',
   emoji: '🏫',
@@ -896,14 +811,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'ECG Walkway Intersection',
-      text: 'This area is a cross-section where Palm Walk divides into multiple walkways, allowing students to travel between different parts of campus. Straight ahead are the ECG Center building and the ECG E-Spaces, which provide additional academic and study spaces for students.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -911,7 +819,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Entrance',
-  description: 'Explore the entrance area of the ECG Spaces walkthrough.',
+  description: 'This is a view inside the ECG Center. As you continue through the next images, you will get a closer look at one of the classrooms and the learning spaces students use.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/Entrance.jpg',
   emoji: '🚪',
@@ -939,14 +847,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Inside the ECG Center',
-      text: 'This is a view inside the ECG Center. As you continue through the next images, you will get a closer look at one of the classrooms and the learning spaces students use.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -954,7 +855,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Point 1',
-  description: 'This panorama shows the first viewpoint inside the ECG area.',
+  description: 'These are classroom and study spaces inside the ECG Center where students can work on assignments, study, and collaborate. Students may also have opportunities to receive help from tutors and get support with their coursework.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/Point 1.jpg',
   emoji: '📍',
@@ -982,14 +883,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'ECG Classrooms & Study Spaces',
-      text: 'These are classroom and study spaces inside the ECG Center where students can work on assignments, study, and collaborate. Students may also have opportunities to receive help from tutors and get support with their coursework.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -997,7 +891,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Point 2',
-  description: 'This panorama shows the second viewpoint in the ECG area.',
+  description: 'This is another view of the classroom, looking outside toward the ECF Spaces. Students in FSE 104 and FSE 404 use these spaces to work on class projects, collaborate with classmates, and apply what they learn through hands-on activities.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/Point 2.jpg',
   emoji: '📍',
@@ -1025,14 +919,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'View of ECF Spaces',
-      text: 'This is another view of the classroom, looking outside toward the ECF Spaces. Students in FSE 104 and FSE 404 use these spaces to work on class projects, collaborate with classmates, and apply what they learn through hands-on activities.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -1040,7 +927,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Point 3',
-  description: 'This panorama shows the third viewpoint in the ECG area.',
+  description: 'This image shows another view of the ECG Center classroom. These spaces give students an area to attend class, work on assignments, collaborate on projects, and study.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/Point 3.jpg',
   emoji: '📍',
@@ -1068,14 +955,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Another View of the Classroom',
-      text: 'This image shows another view of the ECG Center classroom. These spaces give students an area to attend class, work on assignments, collaborate on projects, and study.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -1083,7 +963,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Point 4',
-  description: 'This panorama shows the fourth viewpoint in the ECG area.',
+  description: 'This classroom also has a TV display that students can use as a study tool. It can be used to share presentations, review class materials, work through examples, and collaborate on group projects.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/Point 4.jpg',
   emoji: '📍',
@@ -1111,14 +991,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Classroom Study Display',
-      text: 'This classroom also has a TV display that students can use as a study tool. It can be used to share presentations, review class materials, work through examples, and collaborate on group projects.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -1126,7 +999,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Point 5',
-  description: 'This panorama shows the fifth viewpoint in the ECG area.',
+  description: 'Located just outside the classroom, the Tutor Center is a place where students can ask for help with their coursework, review challenging topics, and get extra academic support. It is a helpful resource for students who want guidance with their classes.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/Point 5.jpg',
   emoji: '📍',
@@ -1154,14 +1027,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Tutor Center',
-      text: 'Located just outside the classroom, the Tutor Center is a place where students can ask for help with their coursework, review challenging topics, and get extra academic support. It is a helpful resource for students who want guidance with their classes.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -1169,7 +1035,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Point 6',
-  description: 'This panorama shows the sixth viewpoint in the ECG area.',
+  description: 'This view shows the back of the classroom, where students can use the tables to work on assignments, study, and collaborate with classmates. These tables provide additional space for group activities and hands-on coursework.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/Point 6.jpg',
   emoji: '📍',
@@ -1197,14 +1063,7 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Classroom Tables',
-      text: 'This view shows the back of the classroom, where students can use the tables to work on assignments, study, and collaborate with classmates. These tables provide additional space for group activities and hands-on coursework.'
-    }
-  ]
+  infoHotspots: []
 },
 
 {
@@ -1212,7 +1071,7 @@ infoHotspots: [
   name: 'ECG Spaces',
   group: 'ECG',
   subtitle: 'Point 7',
-  description: 'This panorama shows the final viewpoint in the ECG area walkthrough.',
+  description: 'This view highlights the large whiteboard in the classroom. Students and instructors can use it to work through problems, explain concepts, brainstorm ideas, and collaborate during class activities or group study sessions.',
   hideFromSidebar: true,
   imagePath: 'images/scenes/ECG Espaces/Point 7.jpg',
   emoji: '📍',
@@ -1233,16 +1092,11 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: [
-    {
-      yaw: 0,
-      pitch: 0,
-      title: 'Classroom Whiteboard',
-      text: 'This view highlights the large whiteboard in the classroom. Students and instructors can use it to work through problems, explain concepts, brainstorm ideas, and collaborate during class activities or group study sessions.'
-    }
-  ]
+  infoHotspots: []
 },
 
+/* ---- END ECG SPACES WALKTHROUGH --------------------------- */
+     
 /* ---- ECF E-SPACES PLACEHOLDER ----------------------------- */
 
 {
