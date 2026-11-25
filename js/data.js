@@ -869,7 +869,7 @@ infoHotspots: [
 
   linkHotspots: [
     {
-      yaw: -0.4,
+      yaw: -2.5,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-entrance',
@@ -912,7 +912,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: -0.4,
+      yaw: -0.1,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-3',
@@ -948,7 +948,7 @@ infoHotspots: [
       label: 'Previous Area'
     },
     {
-      yaw: -0.2,
+      yaw: 0.3,
       pitch: 0.5,
       rotation: 0,
       target: 'ecg-point-4',
