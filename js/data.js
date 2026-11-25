@@ -107,6 +107,7 @@ var APP_DATA = {
     },
 
    
+
 /* ---- MAKER SPACE WALKTHROUGH ------------------------------- */
 
 {
@@ -134,7 +135,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Maker Space Entrance',
+      text: 'This is the entrance to the Maker Space, located on the third floor of Hayden Library at ASU. Students can use this space to create projects, laser cut materials, and 3D print their designs.'
+    }
+  ]
 },
 
 {
@@ -170,7 +178,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Maker Space Overview',
+      text: 'This viewpoint provides a wider look at the Maker Space entrance. You can see a whiteboard and chairs, giving students an area to gather, collaborate, and discuss their projects.'
+    }
+  ]
 },
 
 {
@@ -206,7 +221,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Maker Space Work Area',
+      text: 'This view shows the back of the Maker Space, including the workbenches and tables where students can work on their projects, build creations, and collaborate with others.'
+    }
+  ]
 },
 
 {
@@ -242,7 +264,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Whiteboard and Maker Equipment',
+      text: 'This view highlights the whiteboard at the back of the room and the different types of machines available in the Maker Space. Students can use this equipment to create, design, and work on hands-on projects.'
+    }
+  ]
 },
 
 {
@@ -278,7 +307,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Laser Cutting Area',
+      text: 'This view introduces the laser cutters available in the Maker Space. In the next scene, we will take a closer look at the room where the laser cutters are located.'
+    }
+  ]
 },
 
 {
@@ -314,7 +350,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Laser Cutters and Workstation',
+      text: 'This view shows two laser cutters and a desk with a computer in the middle. Students can use the computer as a workstation when preparing and working on their laser-cutting projects.'
+    }
+  ]
 },
 
 {
@@ -350,7 +393,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Laser Cutting Room – Outside View',
+      text: 'This view shows the laser-cutting room from the outside, giving students a look at the room’s layout and its surroundings within the Maker Space.'
+    }
+  ]
 },
 
 {
@@ -386,7 +436,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Maker Space – Room Overview',
+      text: 'This view provides a look across the middle of the Maker Space, showing the overall layout of the room and the different areas students can use to work on their projects.'
+    }
+  ]
 },
 
 {
@@ -422,7 +479,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: '3D Printing Room',
+      text: 'This view introduces the room where the Maker Space’s 3D printers are located. Students can use these printers to turn their digital designs into physical objects and bring their projects to life.'
+    }
+  ]
 },
 
 {
@@ -451,7 +515,14 @@ var APP_DATA = {
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: '3D Printers and Room Access',
+      text: 'This view shows the back of the 3D printing room, including the different 3D printers available for student projects. It also provides a view of how students can access the room from the main Maker Space area.'
+    }
+  ]
 },
 
 /* ---- END MAKER SPACE WALKTHROUGH --------------------------- */
