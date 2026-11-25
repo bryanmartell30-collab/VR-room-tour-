@@ -714,7 +714,6 @@ infoHotspots: [
 
 
 /* ---- ECG SPACES WALKTHROUGH ------------------------------- */
-
 {
   id: 'ecg-placeholder',
   name: 'ECG Spaces',
@@ -740,7 +739,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Palm Walk',
+      text: 'This is Palm Walk, a major pedestrian walkway on the ASU Tempe campus. Students use this pathway to travel between classes and campus buildings. It provides access to nearby engineering classrooms and other academic spaces.'
+    }
+  ]
 },
 
 {
@@ -776,7 +782,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Science Center',
+      text: 'As you continue along Palm Walk, the Science Center is on your left. This building houses many of the science labs where students attend lab classes and complete hands-on coursework.'
+    }
+  ]
 },
 
 {
@@ -812,7 +825,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'ECG Walkway Intersection',
+      text: 'This area is a cross-section where Palm Walk divides into multiple walkways, allowing students to travel between different parts of campus. Straight ahead are the ECG Center building and the ECG E-Spaces, which provide additional academic and study spaces for students.'
+    }
+  ]
 },
 
 {
@@ -848,7 +868,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Inside the ECG Center',
+      text: 'This is a view inside the ECG Center. As you continue through the next images, you will get a closer look at one of the classrooms and the learning spaces students use.'
+    }
+  ]
 },
 
 {
@@ -884,7 +911,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'ECG Classrooms & Study Spaces',
+      text: 'These are classroom and study spaces inside the ECG Center where students can work on assignments, study, and collaborate. Students may also have opportunities to receive help from tutors and get support with their coursework.'
+    }
+  ]
 },
 
 {
@@ -920,7 +954,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'View of ECF Spaces',
+      text: 'This is another view of the classroom, looking outside toward the ECF Spaces. Students in FSE 104 and FSE 404 use these spaces to work on class projects, collaborate with classmates, and apply what they learn through hands-on activities.'
+    }
+  ]
 },
 
 {
@@ -956,7 +997,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Another View of the Classroom',
+      text: 'This image shows another view of the ECG Center classroom. These spaces give students an area to attend class, work on assignments, collaborate on projects, and study.'
+    }
+  ]
 },
 
 {
@@ -992,7 +1040,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Classroom Study Display',
+      text: 'This classroom also has a TV display that students can use as a study tool. It can be used to share presentations, review class materials, work through examples, and collaborate on group projects.'
+    }
+  ]
 },
 
 {
@@ -1028,7 +1083,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Tutor Center',
+      text: 'Located just outside the classroom, the Tutor Center is a place where students can ask for help with their coursework, review challenging topics, and get extra academic support. It is a helpful resource for students who want guidance with their classes.'
+    }
+  ]
 },
 
 {
@@ -1064,7 +1126,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Classroom Tables',
+      text: 'This view shows the back of the classroom, where students can use the tables to work on assignments, study, and collaborate with classmates. These tables provide additional space for group activities and hands-on coursework.'
+    }
+  ]
 },
 
 {
@@ -1093,7 +1162,14 @@ infoHotspots: [
     }
   ],
 
-  infoHotspots: []
+  infoHotspots: [
+    {
+      yaw: 0,
+      pitch: 0,
+      title: 'Classroom Whiteboard',
+      text: 'This view highlights the large whiteboard in the classroom. Students and instructors can use it to work through problems, explain concepts, brainstorm ideas, and collaborate during class activities or group study sessions.'
+    }
+  ]
 },
 
 /* ---- ECF E-SPACES PLACEHOLDER ----------------------------- */
